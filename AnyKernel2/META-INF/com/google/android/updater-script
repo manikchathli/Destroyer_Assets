@@ -1,0 +1,1 @@
+assert(getprop("ro.product.device") == "potter" || getprop("ro.build.product") == "potter" || getprop("ro.product.device") == "potter_retail" || getprop("ro.build.product") == "potter_retail" || abort("E3004: This package is for device: potter,potter_retail; this device is " + getprop("ro.product.device") + "."););
